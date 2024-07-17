@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cat-Photo Website</title>    
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <div class="title"><h1>CatPhotoApp</h1></div>
+      <section>
+        <div class="divider">
+          <h2 class="heading">Cat Photos</h2></div>
+          <!-- TODO: Add link to cat photos -->
+          <p class="texts">See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+          <a href="https://freecatphotoapp.com"class="image"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."target="blank"></a>
+          <a href="https://freecatphotoapp.com"class="images"><img class="cat"src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."target="_blank"></a>  
+        
+    </section>
+      <section>
+        <div class="divider"> <h2>Cat Lists</h2></div>
+         
+        <div class="list-container">
+        <h3 class="lists">Things cats love:</h3>
+        
+      <ul>
+          <li class="lists">cat nip</li>
+          <li class="lists">laser pointers</li>
+          <li class="lists">lasagna</li>
+        </ul>
+      </div>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" class="image2"alt="A slice of lasagna on a plate."target="blank">
+          <figcaption class="caption">Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <div class="divider">
+          <h3 class="list">Top 3 things cats hate:</h3>
+        </div>
+        <div class="list-container">
+          <ol>
+            <li class="lists">flea treatment</li>
+            <li class="lists">thunder</li>
+            <li class="lists">other cats</li>
+          </ol>
+        </div>
+        
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" class="other-cats" alt="Five cats looking around a field."target="blank">
+          <figcaption class="caption">Cats<strong> hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo" class="forms">
+          <fieldset>
+            <legend>What's your cat's name?</legend><br>
+            <label for="cat-name"><input type="text"id="cat-name"name="cat-name"required></label>
+          </fieldset>
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend><br>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend><br>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <fieldset>
+            <legend>How old is your cat?</legend><br>
+            <input type="radio" id="kitten" name="cat-age" value="Kitten (0-1 year)">
+            <label for="kitten">Kitten (0-1 year)</label><br>
+            <input type="radio" id="young-adult" name="cat-age" value="Young Adult (1-5 years)">
+            <label for="young-adult">Young Adult (1-5 years)</label><br>
+            <input type="radio" id="adult" name="cat-age" value="Adult (5-10 years)">
+            <label for="adult">Adult (5-10 years)</label><br>
+            <input type="radio" id="senior" name="cat-age" value="Senior (10+ years)">
+            <label for="senior">Senior (10+ years)</label>
+            <br><br>
+          </fieldset>
+          <fieldset>
+            <legend>What is your cat's favorite type of food?</legend><br>
+              <label for="cat-food"></label>
+            <select id="cat-food" name="cat-food" required>
+            <option value="Dry food">Dry food</option>
+            <option value="Wet food">Wet food</option>
+            <option value="Homemade">Homemade</option>
+            <option value="Raw diet">Raw diet</option>
+        </select>
+          </fieldset><br>
+          <fieldset>
+          <legend>How does your cat prefer to spend its time? (Select all that apply)</legend><br>
+          <input type="checkbox" id="sleeping" name="cat-activity" value="Sleeping">
+          <label for="sleeping">Sleeping</label><br>
+          <input type="checkbox" id="playing" name="cat-activity" value="Playing with toys">
+          <label for="playing">Playing with toys</label><br>
+          <input type="checkbox" id="exploring" name="cat-activity" value="Exploring outside">
+          <label for="exploring">Exploring outside</label><br>
+          <input type="checkbox" id="cuddling" name="cat-activity" value="Cuddling with humans">
+          <label for="cuddling">Cuddling with humans</label></fieldset>
+          <br><br>
+          <fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          </fieldset>
+        <br>
+        <fieldset>
+        <legend>How often do you take your cat to the vet?</legend><br>
+        <input type="radio" id="once-a-year" name="vet-visit" value="Once a year">
+        <label for="once-a-year">Once a year</label><br>
+        <input type="radio" id="twice-a-year" name="vet-visit" value="Twice a year">
+        <label for="twice-a-year">Twice a year</label><br>
+        <input type="radio" id="when-necessary" name="vet-visit" value="Only when necessary">
+        <label for="when-necessary">Only when necessary</label><br>
+        <input type="radio" id="never" name="vet-visit" value="Never">
+        <label for="never">Never</label></fieldset>
+        <br>
+          <button type="submit"class="btn">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
